@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Web Nest</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Immediately apply saved theme before page renders to prevent flash
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+        
+        // Update logo immediately when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const headerLogo = document.getElementById('header-logo');
+            if (headerLogo) {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                if (currentTheme === 'dark') {
+                    headerLogo.src = 'images/darkmode-logo.jpg';
+                } else {
+                    headerLogo.src = 'images/lightmode-logo.jpg';
+                }
+            }
+        });
+    </script>
+</head>
+
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="186446" async data-cfasync="false"></script>
+<script>(function(s){s.dataset.zone='9422707',s.src='https://ptichoolsougn.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <div class="toggle-container">
+            <div class="toggle-switch" onclick="toggleTheme()">
+                <span class="clouds">☁️</span>
+                <span class="stars">✨</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1><a href='/'><img src="images/darkmode-logo.jpg" alt="Deep Web Nest" id="header-logo" class="header-logo"></a></h1>
+            <p>Your gateway to entertainment and tools</p>
+        </header>
+        
+        <main class="sections-grid">
+            <div class="section-card" onclick="navigateTo('games.html')">
+                <div class="section-icon">🎮</div>
+                <h2>Games</h2>
+                <p>Discover amazing games and gaming resources</p>
+            </div>
+            
+            <div class="section-card" onclick="navigateTo('movies.html')">
+                <div class="section-icon">🎬</div>
+                <h2>Movies/Shows</h2>
+                <p>Stream your favorite movies and TV shows</p>
+            </div>
+            
+            <div class="section-card" onclick="navigateTo('streaming.html')">
+                <div class="section-icon">📺</div>
+                <h2>Streaming</h2>
+                <p>Live Sports & TV</p>
+            </div>
+            
+            <div class="section-card" onclick="navigateTo('software.html')">
+                <div class="section-icon">💻</div>
+                <h2>Software</h2>
+                <p>Essential software and development tools</p>
+            </div>
+            
+            <div class="section-card" onclick="navigateTo('books.html')">
+                <div class="section-icon">📚</div>
+                <h2>Books</h2>
+                <p>Digital libraries and reading resources</p>
+            </div>
+            
+            <div class="section-card" onclick="navigateTo('music.html')">
+                <div class="section-icon">🎵</div>
+                <h2>Music</h2>
+                <p>Music streaming and audio platforms</p>
+            </div>
+            
+            <div class="section-card" onclick="navigateTo('anime.html')">
+                <div class="section-icon">🌸</div>
+                <h2>Anime</h2>
+                <p>Anime streaming and manga resources</p>
+            </div>
+            
+            <div class="section-card" onclick="navigateTo('vpn.html')">
+                <div class="section-icon">🔒</div>
+                <h2>VPN</h2>
+                <p>Virtual private networks and security tools</p>
+            </div>
+            
+            <div class="section-card" onclick="navigateTo('adblockers.html')">
+                <div class="section-icon">🛡️</div>
+                <h2>AdBlockers</h2>
+                <p>Ad blocking tools and privacy extensions</p>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Left Side Ad -->
+    <div class="ad-container ad-left">
+        <!-- Sides -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8586307716491899"
+             data-ad-slot="3493012080"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+    <!-- Right Side Ad -->
+    <div class="ad-container ad-right">
+        <!-- Sides -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8586307716491899"
+             data-ad-slot="3493012080"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
